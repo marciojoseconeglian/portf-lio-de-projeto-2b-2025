@@ -1,57 +1,71 @@
-<!--Declaracao do tipo de documento HTML-->
+<!--comentarios -->
 <!DOCTYPE html>
-<!--Inicio do documento HTML-->
 <html lang="en">
-    <!--cabeçalho da pagina com meta-informações, links de estilo e título-->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu portfólio</title>
+    <title>Meu porfólio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<!--Inicio do corpo da página-->
-
+<!--inicio do corpo da página-->
 <body>
-    <!--Cabeçalho com informações de perfil-->
-    <header>
-<img src="avatar-perfil.png" alt="avatar da fernanda" width="150" height="150">
-<p>Eu sou Ferrnanda</p>
-<h1>Eu ensino programação</h1>
-<p>Sou Engenheira de Computação e Pedagoga. Ensino pensamento computacional usando HTML, CSS e JavaScript.</p>
-<p>Minhas Habilidades:</p>
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<LI>JavaScript</LI>
-<LI>Scratch</LI>
-</ul>
-    </header>
-    <!--Conteúdo principal com a lista de projetos-->
-    <main>
-        <h2>Meus projetos</h2>
-        <section>
-            <h3>Projeto 1</h3>
-            <p>Minha Biblioteca: Uma Webpage Personalizada</p>
-        </section>
-        <section>
-            <h3>Projeto 2</h3>
-            <p>Decidindo o Futuro: Uma jornada Interativa sobre a Inteliência Artificial</p>
-        </section>
-        <section>
-            <h3>Projeto 3</h3>
-            <p>Explorando o Universo: Uma Aventura Interativa em Astronomia com Scratch</p>
-        </section>
-    </main>
-<!--Rodapé com informações de contato-->
-<footer class="container py-5 text-center">
-<h2>Entre em contato</h2>
-<div>
-<i class="bi bi-github"></i>
-<a href="http://github.com/femascheti">GitHub</a>
-</div>
-<p class="my-5">© 2024 Fernanda Mascheti</p>
-</footer>
-</body>
+<!--Cabeçalho com informações de perfil -->
+<header class="container text-center mt-5">
+    <img src="img/avatar-perfil.png" class="rounded-circule" width="150" height="150" alt="avatar da Fernada">
+    <p class="lead">Eu sou Fernanda_</p>
+    <h1>Eu ensino Progamação</h1>
+    <p>Sou Engenheira de Computação e Pedagoga. Ensino pensamento computacional usando HTML, CSS e 
+        JavaScript.</p>
+        <p>Minhas habilidaes:</p>
+        <div>
+        <!-- Exibe uma habilidade como um selo visual -->
+         <span class="badge bg-secondary">HTML</span>
+          <!-- Exibe uma habilidade como um selo visual -->
+         <span class="badge bg-secondary">CSS</span>
+        <!-- Exibe uma habilidade como um selo visual -->
+         <span class="badge bg-secondary">JavaScript</span>
+         <!-- Exibe uma habilidade como um selo visual -->
+         <span class="badge bg-secondary">Scratch</span>
+      </div>
+        </header> 
+<!--Conteúdos principal com a lista de projetos -->
+<main class="container mt-5">
+    <h2 class="text-center">Meus projetos</h2>
+    <div class="row">
 
-</html>
+     <div class="col-md-4">
+     <div class="card">
+     <img src="img/projeto-1.png"class="card-img-top" alt="Projeto 1">
+    <div class="card-body">
+     <h5 class="card-title">Minha Biblioteca</h5>   
+     <p class="card-text">Pagina com livros favoritos estilizada com CSS.</p>
+     <button type="button" class="btn btn-link" data-bs-toggle="modal"data-bs-target="#modal11">Veja o Projeto</button>
+    </div>
+       </div>
+          </div>
+                </div>
+                    </main>
+ <div class="modal fade" id="modal11"tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Minha Biblioteca</h5>
+               <button type="button" class="btn-close" data-bs-dismis="modal"></button>
+               </div>
+                    <div>
+                </div>
+            </div>
+         </div>
+    </div>
+    <!-- Rodapé com informações de contato -->
+ <footer class="container py-5 text-center">
+    <h2>Entre em contato</h2>
+    <div>
+        <i class="bi bi-github"></i>
+        <a href="https://github.com/femascheti">Github</a>
+ </div>
+    <p>Gthub: femascheti</p>
+    <p class="my-5"> 2024 Fernanda Mascheti</p>
+</footer>
+ <!-- inclusão do JavaScript do Bootstrap -->
+  <script scr="https://cdn.jsdelivr.nt/npm/bootsrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
